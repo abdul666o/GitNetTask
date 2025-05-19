@@ -77,5 +77,17 @@ namespace WindowsFormsApplication_15
                 x += step;
             }
         }
+
+        private void buttonDraw_Click(object sender, EventArgs e)
+        {
+            Graphics g = this.CreateGraphics();
+            Pen redPen = new Pen(Color.Red, 2);
+
+            // Example: Draw a simple diagonal line
+            g.DrawLine(redPen, 50, 50, 200, 200);
+
+            // You can also draw a rectangle or circle
+            // g.DrawRectangle(Pens.Blue, 60, 60, 100, 50);
+        }
     }
 }
